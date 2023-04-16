@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prod *= $i;
   }
   echo "<br>전체 합: " . $sum . "<br>";
-  echo "전체 곱: " . $prod . "<br>";
+  echo "전체 곱: " . base_convert($prod, 10, 10) . "<br>";
 }
 ?>
 
